@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { Menu } from "lucide-react";
-import Sidebar from "../sideBar/SideBar";
+import Sidebar from "../sidebar/Sidebar";
 import logo from "../../assets/images/logo.png";
 import "../navbar/Navbar.css";
 

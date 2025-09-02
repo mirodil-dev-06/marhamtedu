@@ -1,0 +1,21 @@
+{
+  "name": "Marhamat Ta'lim",
+  "short_name": "Marhamat",
+  "description": "O'quv markazingiz uchun rasmiy sayt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1b29",
+  "theme_color": "#1A73E8",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -23,12 +23,11 @@ const Sidebar = ({ isOpen, onClose }) => {
 
         {/* Links */}
         <ul className="flex flex-col gap-6 text-lg">
-          <li><a href="#home" className="hover:text-[#3f9cfb]">Home</a></li>
-          <li><a href="#courses" className="hover:text-[#3f9cfb]">Courses</a></li>
-          <li><a href="#team" className="hover:text-[#3f9cfb]">Our Team</a></li>
+          <li><a href="#hero" className="hover:text-[#3f9cfb]">Bosh sahifa</a></li>
+          <li><a href="#courses" className="hover:text-[#3f9cfb]">Kurslar</a></li>
+          <li><a href="#teachers" className="hover:text-[#3f9cfb]">Bizning jamoa</a></li>
           <li><a href="#faq" className="hover:text-[#3f9cfb]">FAQ</a></li>
-          <li><a href="#blog" className="hover:text-[#3f9cfb]">Blog</a></li>
-          <li><a href="#contact" className="hover:text-[#3f9cfb]">Contact</a></li>
+          <li><a href="#contact" className="hover:text-[#3f9cfb]">Kontakt</a></li>
         </ul>
       </div>
     </div>

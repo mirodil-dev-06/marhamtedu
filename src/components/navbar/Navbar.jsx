@@ -17,9 +17,9 @@ const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <header className="w-full h-24 max-w-7xl mx-auto p-6 flex justify-between items-center text-white">
+    <header className="w-full h-24 max-w-7xl mx-auto px-6 flex justify-between items-center text-white">
       {/* Logo */}
-      <Link to="hero" smooth duration={500} className="cursor-pointer">
+      <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
         <img src={logo} alt="logo" className="w-[150px]" />
       </Link>
 
@@ -30,9 +30,11 @@ const Navbar = () => {
             <li key={to}>
               <Link
                 to={to}
-                smooth
+                spy={true}
+                smooth={true}
                 duration={500}
-                className="cursor-pointer font-[Inter] relative 
+                offset={-80} // navbar balandligini hisobga olish
+                className="cursor-pointer relative font-inter 
                   hover:text-[#3f9cfb] transition-colors duration-300
                   after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-[#3f9cfb] after:left-0 after:-bottom-1
                   hover:after:w-full after:transition-all after:duration-300"
@@ -48,12 +50,17 @@ const Navbar = () => {
       <button
         onClick={() => setIsSidebarOpen(true)}
         className="md:hidden cursor-pointer"
+        aria-label="Open Menu"
       >
         <Menu size={28} />
       </button>
 
       {/* Sidebar */}
-      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+      <Sidebar 
+        isOpen={isSidebarOpen} 
+        onClose={() => setIsSidebarOpen(false)} 
+        links={NAV_LINKS} // props orqali linklarni ham berishingiz mumkin
+      />
     </header>
   );
 };
